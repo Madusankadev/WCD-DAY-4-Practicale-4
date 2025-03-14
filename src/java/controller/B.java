@@ -1,4 +1,3 @@
-
 package controller;
 
 import java.io.IOException;
@@ -18,7 +17,10 @@ public class B extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        int x = 10;
+        int y = 20;
+        int z = x + y;
+        resp.getWriter().write("B sucess: " + z);
     }
 
-   
 }
